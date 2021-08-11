@@ -1,4 +1,4 @@
-<script type="text/javascript">
+{/* <script type="text/javascript">
 
 $(document).ready(function(){
     $('[tool-tip-toggle="tooltip-demo"]').tooltip({
@@ -6,4 +6,4 @@ $(document).ready(function(){
     });
 });
  
-</script>
+</script> */}
