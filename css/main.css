@@ -27,19 +27,6 @@ html {
     background: rgba(1, 1, 1, 0.6);
 }
 
-/* #avatar {
-    border-radius: 50%;
-    position: absolute;
-    top: 18%;
-    left: 43%;
-    width: 200px;
-    height: 200px;
-    background-image: url('../img/IMG_2814.jpg');
-    background-position:  center;
-    background-color: cover;
-    background-repeat: no-repeat;
-}  */
-
 .content {
 	font-family: 'Roboto-mono', sans-serif;
     text-align: center;
