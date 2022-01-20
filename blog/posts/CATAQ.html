@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to my world.">
+    <meta name="author" content="Rohan Kamath">
+    <link rel="shortcut icon" type="image/ico" href="../fav.png" />
+
+
+    <title>The Blog</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128498707-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128498707-1');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">The Blog</a>
+            <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('../img/blog-3/cataq-cover.jpeg')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>CATAQ: Concise Answer to Any Question.</h1>
+                        <h2 class="subheading">Did this technique just beat Siri and Google Assistant in answering "certain" questions?</h2>
+                        <span class="meta">Posted by
+              Rohan Kamath
+              on December 17, 2021 [5 minutes]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <p>This blog is on my recent publication <b>"CATAQ: Concise Answer To Any Question"</b> which
+                        has been accepted at the <b>2nd International Conference on Innovative Computing, Intelligent Communication and Smart Electrical systems, 2021 (ICSES-2021)</b> conference and is published 
+                        by IEEE. You can check the paper on the official <a href="https://ieeexplore.ieee.org/document/9633951" target=#blank>IEEE Xplore site</a>, but if you do want access to the PDF, 
+                        feel free to contact me on my <a href="https://www.linkedin.com/in/rohanrkamath/" target="#blank">LinkedIn</a> or <a href="https://twitter.com/rohan__kamath" target="#blank">Twitter</a>. 
+
+                    <p>This research was done in conjunction with Arpan Ghoshal and Dr. Uma D (acted as a mentor, didnt contribute to the research itself), at PES University, Bangalore.</p>
+                    <h2 class="section-heading">Introduction</h2>
+
+                    <!-- <h2 class="subsection-heading">What is Propaganda?</h2> -->
+                    <p>
+                        Ever wondered why sometimes when you ask a question to Google Assistant or Siri; it gives an answer like, "I am not sure about that" or 
+                        "Here what I found on the web". What if there could be any way to answer such questions? - To answer any question we have in our mind?</p>
+                        <p>Here is a proposed approach, "CATAQ: Concise Answer To Any Question", which after implementation can answer any question possible. 
+                    </p>
+
+                    <p> CATAQ is an approach to solving questions not solved by present intelligent assistants like Google Assistants and Siri. In this blog, questions that are not solved by intelligent assistants are 
+                    defined as complex questions and solvable questions as simple questions. CATAQ focuses on solving complex questions keeping consistent output in solving simple questions too.</p>
+
+                    <h2 class="subsection-heading">Simple and Complex Questions</h2>
+
+                    <p>
+                        Lets take some examples and try to understand this.
+                        <ul>
+                            <li>Q1. What is the capital of India?</li>
+                            <li>Q2. Do aestheticians stand a lot at work?</li>
+                        </ul>
+
+                        Take a minute and ask yourself, what is the most fundamental difference between these two questions? Try answering them. The difference lies in the <b>context</b>. This is a rudimentary term that is to be remembered, as this
+                        where the novelty in our reseach lies. 
+                    </p>
+
+                    <p> 
+                        So what are simple and complex questions? Are simple questions cute arthimatic single digit operations and complex questions a triple integral expression? Well they are not. The question itself has nothing to do
+                        with the aforementioned terms, nor does the content in the answers to the question. It is to do with whether the question requires context, in order to be answered. 
+                    </p>
+
+                    <p>
+                        In the example provided, Q1 requires no context at all. The answer is a simple Google Search away (unless you failed 4th grade geography). Whereas in Q2, there can be multiple interpretations to the same question. 
+                        How do we know if an aestheticians stands "alot" at work? How much is alot of standing? Doesn't he sit at all? Therefore this is a question that might have multiple interpretations, and might not have a definite answer, 
+                        as there is no context provided. 
+                    </p>
+
+                    <h2 class="subsection-heading">So how does CATAQ attempt to answer complex questions?</h2>
+
+                    <p> CATAQ solves this problem by dynamic information retrieval, which involves the selection of the most appropriate webpage links, based on the link parsing the content of the webpage 
+                    irrespective of its structure, pre-processing the content, extracting the pertinent information with semantic search and summarizing by prioritizing question’s keywords. In short, this approach 
+                    can answer any question, provided the text fragments of the answer are present on the web pages of the internet. 
+                    </p>
+
+                    <h2 class="section-heading">Novelty</h2>
+                    <p>
+                        All the state-of-the-art intelligent assistants have the ability to answer simple questions that require no context, such as "what is the time?", "How far is the closest pizza joint?". But it is observed when complex 
+                        questions such as "What is life?" is asked, it either returns a link that might contain the "plausible" answer to the questions. But in many cases, just respond with no answers at all. Whereas CATAQ improves on this by having the 
+                        capability of answering simple questions as well as complex questions, prioritizing keywords and choosing the top links for the question asked, and returns a summarised, succinct result.  
+                    </p>
+
+                    <h2 class="section-heading">Methodology</h2>
+
+                    <p>
+                        CATAQ comprises a series of steps which includes selecting a website and extracting text from the website. And then performing a semantic search and summarizing the output text of semantic search results.
+                    </p>
+
+                    <img class="rounded mx-auto d-block" src="../img/blog-3/overview.png" alt="overview" width="550" >
+                    <span class="caption text-muted"> Overview of CATAQ approach. </span>
+                    
+                    <p>
+                        In CATAQ, for semantic search, a BERT-based model was implemented, which is distilBERT on sentence transfer SBERT trained on MSMARCO dataset.
+                        As for summarization, a simple extractive text summarization is implemented prioritizing the words in the question asked. 
+                    </p>
+
+                    <h2 class="subsection-heading">Information extraction from relevant web pages</h2>
+
+                    <p>
+                        This approach needs to be dynamic as possible, to make it more user-oriented and dynamic a layer has been added where a user can select their website from where they want to get information from. 
+                        If the user wants CATAQ to decide the website chosen, it simply selects the first Google search result, which is the `I'm feeling lucky` feature of Google. It is been observed in the research literature that the 
+                        `I'm feeling lucky` search of Google gives the most relevant search result of a query.
+                    </p>
+
+                    <img class="rounded mx-auto d-block" src="../img/blog-3/information extraction.png" alt="information extraction" width="600" >
+                    <span class="caption text-muted"> Flow used for information extraction. </span>
+
+                    <p>
+                        After the website link is extracted, the text available on the particular website is extracted. Just to make sure that it can scrape any website possible, first, the content from the web page was extracted by parsing the DOM tree 
+                        and then removing the tags, which helped retain only the text from the web page. 
+                    </p>
+
+                    <p>
+                        After retrieving the text, sentences were extracted from the text. And if sentence length were below a certain threshold, suppose less than 5 English words, then those sentences were omitted. This created a corpus of only required sentences 
+                        omitting the unnecessary characters and texts.
+                    </p>
+
+                    <h2 class="subsection-heading">Semantic search of question on information extracted </h2>
+
+                    <p>
+                        Now we have the reference text which is processed and extracted from a particular website and the question searched which is candidate sentence. A semantic search is performed on reference sentences with respect to the candidate sentence.
+                    </p>
+
+                    <img class="rounded mx-auto d-block" src="../img/blog-3/semantic search.png" alt="semantic search" width="600" >
+                    <span class="caption text-muted"> Flow used for semantic search. </span>
+
+                    <p>
+                        The corpus extracted for semantic search (reference sentences) is processed by generating contextual embeddings of the sentences (to make the computer understand the English words contextually).The literature survey observed that distilBERT 
+                        showed faster computation while retaining the power of BERT. Furthermore, it is observed that the MS MARCO dataset used for the model creation is the best open-source dataset available for solving open-domain question-answering in intelligent assistants. 
+                        So, the distilBERT model trained on MS MARCO for question answering was used for the semantic search. The sentence transformer (SBERT) on the distilBERT model trained on MS MARCO was used to generate the embeddings. 
+                    </p>
+
+                    <p>
+                        The same model helped in generating the embeddings of the sentence for the question (candidate sentence) being asked. Then the cosine distances were computed, taking the question embedding as the candidate and corpus embeddings as a reference. The corpus 
+                        sentences which contained the lowest cosine scores were considered for the summarization step. This helped in retrieving most semantically similar sentences from the reference sentences.
+                    </p>
+
+                    <h2 class="subsection-heading">Text summarization on semantic relevant texts.</h2>
+                    <p>
+                        <img class="rounded mx-auto d-block" src="../img/blog-3/text summarization.png" alt="text summarization" width="600" >
+                        <span class="caption text-muted"> Flow used for text summarization. </span>
+                    </p>
+                    <p>
+                        The text provided by the semantic search was filtered to get the answer concisely for providing most of the information in a few lines. This was performed by implementing the simple heuristic steps, which gave ideal results. The steps were as follows: - 
+                    </p>
+                        <ol>
+                            <li>
+                                The vocabulary was created by extracting lemmatized words from the text provided by semantic search and the question which was searched. 
+                            </li>
+                            <li>
+                                A frequency table was maintained for counting the presence of the vocabulary. 
+                            </li>
+                            <li>
+                                The frequency of the vocabulary was incremented with 1 point in the frequency table if the given vocabulary is from the text provided by semantic search. 
+                            </li>
+                            <li>
+                                If the vocabulary was from the question, the frequency was incremented with 5 points in the frequency table. This helped in valuing the relevant sentences more. 
+                            </li>
+                            <li>
+                                If the vocabulary was from the stop words, the frequency was set to 0 points. 
+                            </li>
+                            <li>
+                                The sentences were quantified by summation of the vocabulary points, and the scores were assigned to each sentence.
+                            </li>
+                            <li>
+                                Sentences whose scores were 25% more than the averages of the frequencies in each sentence were chosen for the final output. 
+                            </li>
+                        </ol>
+                    <p>
+                        Executing these steps provided a concise answer for the question by keeping the information intact as it prioritizes keywords from the question to select the most similar from the semantically similar sentences. 
+                    </p>
+
+                    <h2 class="section-heading">Results</h2>
+
+                    <p>
+                        The methodology implemented in CATAQ was tested on simple and complex questions to support the performance of the approach. 
+                        To evaluate the results, the state-of-the-art intelligent assistants, such as Google Assistant by Google and Siri by Apple, were 
+                        compared with CATAQ on 15th June 2021. The default website selection logic was chosen to evaluate the differences in the behaviour 
+                        of the answers, which is to select the first link of Google search results.
+                    </p>
+                    <p>
+                        First, CATAQ was compared with the other intelligent assistant by querying simple questions to check the basic functionality of the approach. Then it was compared with the complex questions to understand the complex functionality of the approach.
+                    </p>
+                    
+
+                    <p>
+                        If the assistant failed to answer the question, it provided related weblinks or directly showed a prompt that the search is failed. Eventually, it was seen that all the assistants, including the proposed approach, passed all of the questions, but when complex questions were asked, only CATAQ was able to answer them with concise and relevant output while others showed related links or prompted failed search.
+                    </p>
+
+                    <p>
+                        For simple questions, CATAQ delivered results similar to the ones rendered by the modern intelligent assistants (Google Assistant and Siri).
+                        We have used BLEU scores and ROGUE-L scores as our text similarity indicators. 
+
+                    </p>
+
+                    <p>
+                        For complex questions, the example below is the snippet from the paper. Siri failed to give an answer to the question, and Google Assistant
+                        provided links. Whereas CATAQ was about to render a concisely summarized text as the answer to the question. 
+                    </p>
+
+                    <img class="rounded mx-auto d-block" src="../img/blog-3/complex.png" alt="text summarization" width="600" >
+                    <span class="caption text-muted"> One of the examples provided in the paper.  </span>
+
+                    <p>
+                        Siri failed to give an answer to the complex question, and Google Assistant
+                        provided links. Whereas CATAQ was about to render a concisely summarized text as the answer to the question. 
+                    </p>
+
+                    <p>
+                        For more detailed results, please refer to the paper. This includes the similaroty scores and the questions used for our testing.
+                        If you do not have access to the IEEE link, contact me for the PDF version. 
+                    </p>
+
+                    <h2 class="section-heading">Conclusion</h2>
+
+                    <p>
+                        The CATAQ approach outperforms Google Assistant and Siri on open-domain
+
+question-answering capabilities of complex questions asked. Furthermore, it showed consistency in answering simple questions and complex questions. While asked complex
+
+questions, Google Assistant and Siri render website links to search for an answer. However, CATAQ outputted answers to the complex questions as it gave to the simple ones. This
+
+approach combined state-of-art models with the basic flow of information to achieve the best output possible, proving a novel approach to solve complex questions asked.
+                    </p>
+
+                    <!-- <p>
+                        There has been handful of research done to detect propaganda, textual and semantics based. But we realised emotions were never considered as factor for propaganda detection, which we thought was imperitive to get more accurate results. Therefore we have employed a transfer learning 
+                        method called domain adaptation. Domain adaptation is the ability to apply an algorithm trained in a "source domain" to a different "target domain". We have also incorporated emotions vectors as a dimension into our model.
+                    </p>
+
+                    <h2 class="section-heading">Research</h2>
+                    <h2 class="subsection-heading">Dataset</h2>
+                    <p>
+                        <b>Source Dataset -</b> A labelled dataset of news articles from SemEval 2020’s open shared task - Detection of
+                        Propaganda in new articles was used.The creators of the task compiled a corpus of about
+                        464 news articles in which fragments containing one out of <a href="https://www.uvm.edu/~jleonard/AGRI183/propoaganda.html">18 propaganda techniques</a>
+                        were annotated.
+                    </p>
+                    <p>
+                        <b>Target Dataset -</b> A dataset of 597 tweets were scraped on the chosen topic. Based on the background
+                        research, 8 highly propagandistic and 2 relatively neutral hashtags were identified. For
+                        each hashtag, tweets with appropriate tweet IDs were collected using Twitter APIs. The
+                        tweets were then manually annotated with reference to the 18 well documented propaganda techniques, 
+                        and after this process, 462 propagandistic and 135 non-propagandistic tweets were collected.
+                    </p>
+
+                    <h2 class="subsection-heading">Pre-processing</h2>
+                    <p>
+                        The model utilises the information from its labelled data at the sentence level to classify
+                        the unlabelled data. The following procedures were followed for the source and target:
+                    </p>
+                    <p>
+                        <b>Source Data Preparation -</b> Each sentence of the 464 labelled articles was checked for the presence of a
+                        propagandistic span and written into two separate parsed XML files, each containing
+                        propagandistic and non-propagandistic sentences respectively.
+                    </p>
+                    <p>
+                        <b>Target Data Preparation -</b> Tweets consist of hashtags, urls, usernames and emojis. The emojis were converted to
+                        text and the contents of the hashtags were stored. The 597 manually annotated tweets
+                        were then separated out into two files as mentioned above and the remaining unlabelled
+                        tweets were written into another file.
+                    </p>
+
+                    <h2 class="subsection-heading">Baselines</h2>
+
+                    <p>
+                        We worked on three different models, each built on each other. Therefore I will briefly be explaining Baseline 1 and Baseline 2, and expounding on the details of Baseline3.
+                    </p>
+                    <p>
+                        <b>Baseline 1 -</b> The first baseline was a model that identified propagandistic spans in a phrase using a single multilabel token classification head and a 
+                        highly adjusted BERT-base uncased model trained on the SEMEVAL dataset. The token classifier is created by adding a linear classification head to BERT's final layer. The BERT model 
+                        used had 12 transformer layers with 110 million trained parameters, including batch-size 64, sequence-length 210, early stopping on F1 score on the validation set with a patience value 
+                        of 7, 0.01 as weight decay, and Adam optimizer with a learning rate of 3e-5 as hyper-parameters on the validation set. The model was evaluated on unlabeled tweets after being trained for 20 epochs.
+                    </p>
+                    <p>
+                        <b>Baseline 2 -</b> The Pivot Based Language Model (PBLM) is a domain adaptation via representation learning (DRel) approach in which the source and destination learn a structure-aware shared representation.
+                         A sequential neural network (LSTM) was employed in the model, which produced a context-dependent vector for each input word. For each tweet, the first phase entailed taking the tagged occurrences and creating 
+                         unigram and bigram characteristics. The MI score was then computed, which represented the relevance of a feature to a certain label as a tuple of feature and score. 
+                    </p>
+                    <p>
+                        The second phase included altering the usual 
+                         LSTM training method to get the shared representation by only predicting the following word if it was a pivot (as generated from the previous phase). The third step trained the classifier by progressively stacking 
+                         the previously trained PBLM model without the softmax layer (containing the structural aware representation) with a CNN and an LSTM, and recording the accuracies of both against the manually annotated tweets.
+                    </p>
+                    <p>
+                        <b>Baseline 3 -</b> The Enhanced PBLM model aims to bring the two baselines together to see the
+                        improvement in the performance. This baseline additionally used the emotion footprint as a feature, which was based on Ekman's concept of six fundamental emotions: Anger, Disgust, Fear, Joy, Sadness, and Surprise. 
+                        The embedding obtained during the PBLM training phase was multiplied by the relevant emotion vector for each tweet. Matrix multiplication is used to prevent a sparse matrix and to emphasise the emotion signals.
+                        For text classification, the resulting vector is input into an LSTM layer and then passed through a dense layer with a sigmoid activation.
+                    </p>
+
+                    <img class="img-fluid" src="../img/blog-2/pic2.png" alt="baseline3_diagram">
+                    <span class="caption text-muted"> Diagram representation of the workflow of enhanced PBLM (Baseline 3) </span>
+
+                    <p>
+                        This is the algorithm we developed for the enhanced PBLM - 
+                    </p>
+
+                    <img class="img-fluid" src="../img/blog-2/pic3.png" alt="algorithm">
+                    <span class="caption text-muted"> Algorithm of enhanced PBLM </span>
+
+                    <h2 class="section-heading">Results</h2>
+                    <br>
+
+                    <img class="img-fluid" src="../img/blog-2/pic4.png" alt="results">
+                    <span class="caption text-muted"> Accuracies of the baseline models </span>
+
+                    <p>
+                        From the obtained values, we see that transferring features learnt from structured text like
+                        news articles does not perform well on a dataset which has a completely different
+                        distribution of words, such as in twitter. Thus, baseline 1 does not perform very well on the
+                        target dataset having obtained an accuracy of 0.46.
+                    </p>
+                    <p>
+                        From baseline 2, we see that within domain adaptation, PBLM-LSTM classifier performs
+                        better than PBLM-CNN by obtaining an accuracy of 0.63 as compared to the latter with
+                        0.59 accuracy. Thus, we use the PBLM-LSTM for our enhanced model.
+                    </p>
+                    <p>
+                        Finally, baseline 3 gives an accuracy of 0.75, which proves that adding emotions as a feature can
+                        improve the overall performance of a propaganda detection model.
+                    </p>
+
+                    <h2 class="section-heading"> Conclusion </h2>
+                    <p>
+                        Now that we have detected the propaganda, what about the mastermind behind all this, the propagandist? 
+                    </p>
+                    <p>
+                        Our current research is to get to the source, the propagandists who are the main cause of this dissemination, by using social network 
+                        analysis (SNA) techniques. We plan on building a retweet graph and use GCN to generate node embeddings and hopefully detect the propagandist.
+
+                    <p></p>
+
+                    <p></p>
+                </div>
+            </div>
+        </div> -->
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <p class="copyright text-muted">Copyright &copy; Rohan Kamath 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
